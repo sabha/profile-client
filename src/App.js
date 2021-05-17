@@ -8,6 +8,11 @@ import Routes from "./Routes";
 import { AppContext } from "./libs/contextLib";
 import { onError } from "./libs/errorLib";
 import "./App.css";
+import Art1 from "./components/canvas/Art1";
+import Art2 from "./components/canvas/Art2";
+import Art3 from "./components/canvas/Art3";
+import Art4 from "./components/canvas/Art4";
+import Art6 from "./components/canvas/Art6";
 
 function App() {
   const [isAuthenticating, setIsAuthenticating] = useState(true);
@@ -69,9 +74,15 @@ function App() {
             </Nav>
           </Navbar.Collapse>
         </Navbar>
+
         <AppContext.Provider value={{ isAuthenticated, userHasAuthenticated }}>
           <Routes />
         </AppContext.Provider>
+        <Art1 />
+        <Art2 />
+        <Art3 />
+        <Art4 />
+        <Art6 />
       </div>
     )
   );
