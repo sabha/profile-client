@@ -1,21 +1,5 @@
 import React from "react";
 
-const clrs = [
-  "#81B29A",
-  "#F2CC8F",
-  "#3D405B",
-  "#0D2E41",
-  "#44AD9F",
-  //"#FA6135",
-  "#F28A80",
-  "#9ACFDD",
-  "#202731",
-  "#CABAAB",
-  "#FFBFBF",
-  "#FFD5D5",
-];
-const random = (max) => Math.floor(Math.random() * max);
-
 function Art5() {
   const canvasRef = React.useRef(null);
   React.useEffect(() => {
@@ -30,12 +14,6 @@ function Art5() {
       ctx.moveTo(p1.x, p1.y);
       ctx.lineTo(p2.x, p2.y);
     };
-    const circle = (x, y, r = 5) => {
-      ctx.beginPath();
-      ctx.arc(x, y, r, 0, 2 * Math.PI);
-      ctx.stroke();
-    };
-
     let r = 90;
     let lines = [];
     for (let c = 0; c < 12; c++) {
