@@ -48,7 +48,7 @@ function App() {
         <Navbar collapseOnSelect bg="light" expand="md" className="mb-3">
           <LinkContainer to="/">
             <Navbar.Brand className="font-weight-bold text-muted">
-              Art with Code
+              GenArt
             </Navbar.Brand>
           </LinkContainer>
           <Navbar.Toggle />
@@ -78,11 +78,13 @@ function App() {
         <AppContext.Provider value={{ isAuthenticated, userHasAuthenticated }}>
           <Routes />
         </AppContext.Provider>
-        <Art1 />
-        <Art2 />
-        <Art3 />
-        <Art4 />
-        <Art6 />
+        <div className="lander">
+          <Art1 />
+          <Art2 />
+          <Art3 />
+          <Art4 />
+          <Art6 />
+        </div>
       </div>
     )
   );
